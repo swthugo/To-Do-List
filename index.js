@@ -100,7 +100,7 @@ function DisplayTodos () {
             input.addEventListener('blur', e => {
                 input.setAttribute = e.target.value;
                 todo.content = e.target.value;
-                localStorage.setItem('todos', JSON,stringify(todos));
+                localStorage.setItem('todos', JSON.stringify(todos));
                 DisplayTodos();
             })
         })
